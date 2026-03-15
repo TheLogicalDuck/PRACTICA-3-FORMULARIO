@@ -1,4 +1,4 @@
-# Practica3 app
+# Practica4 app
 
 ## Run the app
 
@@ -6,64 +6,76 @@
 
 Run as a desktop app:
 
-```bash
+```
 uv run flet run
 ```
 
 Run as a web app:
 
-```bash
+```
 uv run flet run --web
 ```
 
-For more details on running the app, refer to the [Getting Started Guide](https://docs.flet.dev/).
+### Poetry
+
+Install dependencies from `pyproject.toml`:
+
+```
+poetry install
+```
+
+Run as a desktop app:
+
+```
+poetry run flet run
+```
+
+Run as a web app:
+
+```
+poetry run flet run --web
+```
+
+For more details on running the app, refer to the [Getting Started Guide](https://flet.dev/docs/getting-started/).
 
 ## Build the app
 
 ### Android
 
-```bash
+```
 flet build apk -v
 ```
 
-For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://docs.flet.dev/publish/android/).
+For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://flet.dev/docs/publish/android/).
 
 ### iOS
 
-```bash
+```
 flet build ipa -v
 ```
 
-For more details on building and signing `.ipa`, refer to the [iOS Packaging Guide](https://docs.flet.dev/publish/ios/).
+For more details on building and signing `.ipa`, refer to the [iOS Packaging Guide](https://flet.dev/docs/publish/ios/).
 
 ### macOS
 
-```bash
+```
 flet build macos -v
 ```
 
-For more details on building macOS package, refer to the [macOS Packaging Guide](https://docs.flet.dev/publish/macos/).
+For more details on building macOS package, refer to the [macOS Packaging Guide](https://flet.dev/docs/publish/macos/).
 
 ### Linux
 
-```bash
+```
 flet build linux -v
 ```
 
-For more details on building Linux package, refer to the [Linux Packaging Guide](https://docs.flet.dev/publish/linux/).
+For more details on building Linux package, refer to the [Linux Packaging Guide](https://flet.dev/docs/publish/linux/).
 
 ### Windows
 
-```bash
+```
 flet build windows -v
 ```
 
-For more details on building Windows package, refer to the [Windows Packaging Guide](https://docs.flet.dev/publish/windows/).
-
-### Web
-
-```bash
-flet build web -v
-```
-
-For more details on building Web app, refer to the [Web Packaging Guide](https://docs.flet.dev/publish/web/).
+For more details on building Windows package, refer to the [Windows Packaging Guide](https://flet.dev/docs/publish/windows/).

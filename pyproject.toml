@@ -1,28 +1,41 @@
 [project]
-name = "practica3"
+name = "practica-4"
 version = "0.1.0"
 description = ""
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 authors = [
     { name = "Flet developer", email = "you@example.com" }
 ]
 dependencies = [
-    "flet>=0.82.0"
-]
-
-[dependency-groups]
-dev = [
-    "flet-cli>=0.82.0",
-    "flet-desktop>=0.82.0",
-    "flet-web>=0.82.0",
+  "flet==0.28.3"
 ]
 
 [tool.flet]
+# org name in reverse domain name notation, e.g. "com.mycompany".
+# Combined with project.name to build bundle ID for iOS and Android apps
 org = "com.mycompany"
-product = "practica3"
+
+# project display name that is used as an app title on Android and iOS home screens,
+# shown in window titles and about app dialogs on desktop.
+product = "practica-4"
+
+# company name to display in about app dialogs
 company = "Flet"
-copyright = "Copyright (C) 2023-2026 by Flet"
+
+# copyright text to display in about app dialogs
+copyright = "Copyright (C) 2025 by Flet"
 
 [tool.flet.app]
 path = "src"
+
+[tool.uv]
+dev-dependencies = [
+    "flet[all]==0.28.3",
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+flet = {extras = ["all"], version = "0.28.3"}
